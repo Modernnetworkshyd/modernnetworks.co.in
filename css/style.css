@@ -895,3 +895,6 @@ body{overflow-x:hidden}
  .mn-enquiry-form{grid-template-columns:1fr}.mn-enquiry-form label.full,.mn-enquiry-submit,.mn-enquiry-note{grid-column:1}
  .mn-enquiry-head{padding-right:42px}
 }
+
+
+/* V20 cache-busting safety: shared visual rules intentionally remain global. */
