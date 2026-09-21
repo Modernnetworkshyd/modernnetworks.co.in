@@ -368,3 +368,111 @@ body[data-page="about"] .site-header { margin-top:0; }
   .about-reference-image-hero { overflow:hidden; }
   .about-reference-image-hero img { width:100%; min-width:900px; max-width:none; transform:translateX(calc((100% - 900px) / 2)); }
 }
+
+
+/* MODERN NETWORKS — OFFICIAL 4-COLOR BRAND SYSTEM
+   Brand balance: Blue 35% | Magenta 35% | Green 15% | Gold 15%.
+   Neutrals are retained only for readability, contrast and accessibility. */
+:root{
+  --mn-blue:#1E71B6;
+  --mn-green:#159558;
+  --mn-magenta:#CA2378;
+  --mn-gold:#EDAD25;
+  --mn-blue-dark:#123B60;
+  --mn-magenta-dark:#8E1854;
+
+  /* Map the existing design tokens to the approved brand palette. */
+  --royal:var(--mn-blue);
+  --blue:var(--mn-blue);
+  --cyan:var(--mn-green);
+  --magenta:var(--mn-magenta);
+  --maroon:var(--mn-magenta-dark);
+  --navy:var(--mn-blue-dark);
+  --navy2:#164B73;
+}
+
+/* Primary structure — BLUE */
+.site-header{border-bottom-color:rgba(30,113,182,.20)}
+.main-nav a:hover,.main-nav a.active{color:var(--mn-blue)}
+.main-nav a.active:after{background:linear-gradient(90deg,var(--mn-blue),var(--mn-green))}
+.nav-call,.btn-primary{background:linear-gradient(135deg,var(--mn-blue),#287FC1)}
+.menu-toggle{color:var(--mn-blue)}
+.hero h1 span{color:var(--mn-green)}
+.eyebrow,.section-kicker{color:var(--mn-green)}
+.hero-slider-arrow{color:var(--mn-blue)}
+.hero-slider-dots button.active{background:linear-gradient(90deg,var(--mn-magenta),var(--mn-blue))}
+.home-services:after{background:linear-gradient(90deg,var(--mn-blue) 0 35%,var(--mn-magenta) 35% 70%,var(--mn-green) 70% 85%,var(--mn-gold) 85% 100%)}
+
+/* MAGENTA — strong visual accent, CTA edges and featured states */
+.section-dark{background:linear-gradient(135deg,var(--mn-blue-dark),#173B59 55%,var(--mn-magenta-dark))}
+.art-badge{background:linear-gradient(135deg,var(--mn-magenta),var(--mn-magenta-dark))}
+.detail-number,.quote-mark{color:var(--mn-magenta)}
+.enquiry-form{border-top-color:var(--mn-magenta)}
+.catalog-note{border-left-color:var(--mn-magenta)}
+.final-cta{background:linear-gradient(120deg,var(--mn-blue-dark) 0%,var(--mn-magenta-dark) 100%)}
+
+/* GOLD — controlled premium highlights */
+.experience-number{color:var(--mn-gold)}
+.about-fact-panel .about-stat strong{color:var(--mn-gold)}
+.solution-no{color:var(--mn-gold)}
+.art-badge strong{color:#fff}
+.about-command-stats strong{color:var(--mn-gold)}
+.about-command-stats i{background:rgba(237,173,37,.65)}
+.gallery-placeholder span{color:var(--mn-gold)}
+
+/* GREEN — secondary actions, confirmations and technology accents */
+.floating-wa{background:var(--mn-green)}
+.card-icon{color:var(--mn-green);background:linear-gradient(135deg,#eaf8f1,#f8fbff)}
+.solution-ribbon a:nth-child(2):before{background:linear-gradient(90deg,var(--mn-green),var(--mn-blue))}
+.about-service-tile:nth-child(2) div{border-top-color:var(--mn-green)}
+.about-service-tile:nth-child(3) div{border-top-color:var(--mn-blue)}
+.about-service-tile:nth-child(4) div{border-top-color:var(--mn-magenta)}
+.about-service-tile:nth-child(5) div{border-top-color:var(--mn-gold)}
+
+/* Brand-gradient ribbons — mixed mode using the 35/35/15/15 hierarchy. */
+.hero:before{background:
+  radial-gradient(ellipse at 50% 100%,rgba(21,149,88,.20),transparent 60%),
+  repeating-linear-gradient(90deg,transparent 0 38px,rgba(30,113,182,.08) 39px 40px)}
+.hero-pattern{background-image:
+  radial-gradient(circle at 10% 80%,rgba(202,35,120,.28) 0 1px,transparent 2px),
+  linear-gradient(120deg,transparent 40%,rgba(237,173,37,.08) 40% 60%,transparent 60%)}
+.section-soft{background:linear-gradient(135deg,#eef6fb 0%,#fff 48%,#fff4f8 100%)}
+.visual-solutions{background:linear-gradient(135deg,#edf6fb 0%,#fff 48%,#fff2f7 100%)}
+.solution-ribbon a:before{background:linear-gradient(90deg,var(--mn-blue),var(--mn-magenta))}
+.solution-ribbon a:nth-child(2):before{background:linear-gradient(90deg,var(--mn-green),var(--mn-blue))}
+.solution-ribbon a:nth-child(3):before{background:linear-gradient(90deg,var(--mn-blue),var(--mn-gold))}
+.solution-ribbon a:nth-child(4):before{background:linear-gradient(90deg,var(--mn-magenta),var(--mn-gold))}
+.solution-ribbon a:nth-child(5):before{background:linear-gradient(90deg,var(--mn-magenta),var(--mn-green))}
+
+/* Service and content accents */
+.product-box-rich>span{background:#eaf4fb;color:var(--mn-blue)}
+.product-grid-rich .product-box-rich:nth-child(2)>span{background:#eaf8f1;color:var(--mn-green)}
+.product-grid-rich .product-box-rich:nth-child(3)>span{background:#fff0f7;color:var(--mn-magenta)}
+.product-grid-rich .product-box-rich:nth-child(4)>span{background:#fff7df;color:#9A6A00}
+.product-grid-rich .product-box-rich:nth-child(5)>span{background:#eaf4fb;color:var(--mn-blue)}
+.service-card,.detail-card,.product-box,.testimonial-modern,.gallery-placeholder{border-color:rgba(30,113,182,.16)}
+.service-card:hover,.detail-card:hover,.product-box:hover{box-shadow:0 22px 45px rgba(30,113,182,.16)}
+.contact-details b{color:var(--mn-blue)}
+.contact-section{background:linear-gradient(135deg,#f5faff,#fff6fa)}
+.site-footer{background:linear-gradient(135deg,#0D2A43,#173B59 58%,#4B1740)}
+.footer-bottom{border-top-color:rgba(237,173,37,.22)}
+
+/* About / Services command heroes */
+.about-command-copy h1 span{background:linear-gradient(90deg,#fff,var(--mn-green));-webkit-background-clip:text;background-clip:text;color:transparent}
+.about-command-points span{border:1px solid rgba(237,173,37,.28)}
+.services-command-overlay{background:
+  linear-gradient(90deg,rgba(18,59,96,.98) 0%,rgba(18,59,96,.88) 32%,rgba(18,59,96,.48) 58%,rgba(18,59,96,.10) 100%),
+  linear-gradient(0deg,rgba(202,35,120,.20),transparent 45%,rgba(21,149,88,.10))}
+.about-command-overlay{background:
+  linear-gradient(90deg,rgba(18,59,96,.98) 0%,rgba(18,59,96,.90) 30%,rgba(18,59,96,.60) 52%,rgba(18,59,96,.20) 76%,rgba(18,59,96,.08) 100%),
+  linear-gradient(0deg,rgba(202,35,120,.18),transparent 48%,rgba(21,149,88,.10))}
+.about-reference-hero .about-collage-blur{background:
+  radial-gradient(circle at 70% 48%,rgba(30,113,182,.20),transparent 34%),
+  linear-gradient(90deg,rgba(18,59,96,.98) 0%,rgba(18,59,96,.94) 27%,rgba(18,59,96,.72) 43%,rgba(18,59,96,.24) 68%,rgba(18,59,96,.12) 100%)}
+.about-collage-card span{background:rgba(18,59,96,.92);border-left:3px solid var(--mn-gold)}
+.about-reference-image-hero{background:var(--mn-blue-dark)}
+
+/* Make the official palette visible without overwhelming the page. */
+.btn-outline:hover{border-color:var(--mn-gold);color:var(--mn-gold)}
+.btn-white{color:var(--mn-blue)}
+.section-heading h2:after{content:"";display:block;width:52px;height:3px;margin-top:12px;border-radius:3px;background:linear-gradient(90deg,var(--mn-blue) 0 35%,var(--mn-magenta) 35% 70%,var(--mn-green) 70% 85%,var(--mn-gold) 85% 100%)}
