@@ -476,3 +476,185 @@ body[data-page="about"] .site-header { margin-top:0; }
 .btn-outline:hover{border-color:var(--mn-gold);color:var(--mn-gold)}
 .btn-white{color:var(--mn-blue)}
 .section-heading h2:after{content:"";display:block;width:52px;height:3px;margin-top:12px;border-radius:3px;background:linear-gradient(90deg,var(--mn-blue) 0 35%,var(--mn-magenta) 35% 70%,var(--mn-green) 70% 85%,var(--mn-gold) 85% 100%)}
+
+
+/* HOME PAGE TYPOGRAPHY ENHANCEMENT — approved preview direction.
+   Scoped to Home only so About, Services, Showcase and Contact remain unchanged. */
+body[data-page="home"] .hero-copy .eyebrow{
+  font-size:12px;
+  letter-spacing:2.4px;
+}
+body[data-page="home"] .hero-copy h1{
+  font-size:clamp(48px,6vw,76px);
+  line-height:1.02;
+  letter-spacing:-3.2px;
+  margin:16px 0 22px;
+}
+body[data-page="home"] .hero-copy .hero-text{
+  font-size:19px;
+  line-height:1.7;
+  max-width:700px;
+}
+body[data-page="home"] .hero-actions{
+  margin:31px 0;
+}
+body[data-page="home"] .hero-actions .btn{
+  font-size:12px;
+  padding:14px 22px;
+}
+body[data-page="home"] .hero-trust{
+  font-size:11px;
+  gap:20px;
+}
+
+/* MODERN NETWORKS introduction */
+body[data-page="home"] .section{
+  padding:88px 0;
+}
+body[data-page="home"] .two-col > div:first-child .section-kicker{
+  font-size:11px;
+  letter-spacing:2.2px;
+}
+body[data-page="home"] .two-col > div:first-child h2{
+  font-size:clamp(34px,4vw,46px);
+  line-height:1.12;
+  letter-spacing:-1.5px;
+  margin:10px 0 15px;
+}
+body[data-page="home"] .two-col > div:first-child p{
+  font-size:16px;
+  line-height:1.75;
+}
+
+/* HOW WE HELP / EQUIPMENT IN FOCUS */
+body[data-page="home"] .section-heading .section-kicker{
+  font-size:11px;
+  letter-spacing:2.2px;
+}
+body[data-page="home"] .section-heading h2{
+  font-size:clamp(34px,4vw,46px);
+  line-height:1.1;
+  letter-spacing:-1.5px;
+  margin:9px 0 13px;
+}
+body[data-page="home"] .section-heading p{
+  font-size:15px;
+  line-height:1.7;
+  max-width:760px;
+}
+body[data-page="home"] .solution-ribbon a strong{
+  font-size:15px;
+}
+body[data-page="home"] .solution-ribbon a small{
+  font-size:11px;
+}
+
+/* Equipment labels become easier to scan */
+body[data-page="home"] .service-photo-card span{
+  font-size:15px;
+}
+body[data-page="home"] .service-photo-card small{
+  font-size:11px;
+}
+
+/* WHY MODERN NETWORKS */
+body[data-page="home"] .why-grid > div:first-child h2{
+  font-size:clamp(34px,4vw,46px);
+  line-height:1.1;
+  letter-spacing:-1.5px;
+}
+body[data-page="home"] .why-grid > div:first-child p{
+  font-size:16px;
+  line-height:1.7;
+}
+body[data-page="home"] .why-list strong{
+  font-size:14px;
+}
+body[data-page="home"] .why-list span{
+  font-size:12px;
+}
+
+/* READY TO GET STARTED */
+body[data-page="home"] .final-cta{
+  padding:70px 0;
+}
+body[data-page="home"] .final-cta .section-kicker{
+  font-size:11px;
+  letter-spacing:2.3px;
+}
+body[data-page="home"] .final-cta h2{
+  font-size:clamp(36px,4.4vw,50px);
+  line-height:1.08;
+  letter-spacing:-1.5px;
+  margin:9px 0 0;
+}
+body[data-page="home"] .final-cta .btn{
+  font-size:12px;
+  padding:15px 23px;
+}
+
+@media(max-width:900px){
+  body[data-page="home"] .hero-copy h1{
+    font-size:clamp(44px,7vw,64px);
+  }
+  body[data-page="home"] .hero-copy .hero-text{
+    font-size:17px;
+  }
+  body[data-page="home"] .section{
+    padding:72px 0;
+  }
+  body[data-page="home"] .two-col > div:first-child h2,
+  body[data-page="home"] .section-heading h2,
+  body[data-page="home"] .why-grid > div:first-child h2{
+    font-size:38px;
+  }
+}
+
+@media(max-width:680px){
+  body[data-page="home"] .hero-copy .eyebrow{
+    font-size:10px;
+    letter-spacing:1.7px;
+  }
+  body[data-page="home"] .hero-copy h1{
+    font-size:40px;
+    line-height:1.05;
+    letter-spacing:-1.6px;
+    margin:12px 0 16px;
+  }
+  body[data-page="home"] .hero-copy .hero-text{
+    font-size:15px;
+    line-height:1.65;
+  }
+  body[data-page="home"] .hero-actions .btn{
+    font-size:11px;
+    padding:12px 17px;
+  }
+  body[data-page="home"] .hero-trust{
+    font-size:10px;
+    gap:10px;
+  }
+  body[data-page="home"] .section{
+    padding:58px 0;
+  }
+  body[data-page="home"] .two-col > div:first-child h2,
+  body[data-page="home"] .section-heading h2,
+  body[data-page="home"] .why-grid > div:first-child h2{
+    font-size:32px;
+    line-height:1.12;
+    letter-spacing:-.8px;
+  }
+  body[data-page="home"] .two-col > div:first-child p,
+  body[data-page="home"] .section-heading p,
+  body[data-page="home"] .why-grid > div:first-child p{
+    font-size:14px;
+  }
+  body[data-page="home"] .solution-ribbon a strong{
+    font-size:14px;
+  }
+  body[data-page="home"] .final-cta{
+    padding:54px 0;
+  }
+  body[data-page="home"] .final-cta h2{
+    font-size:34px;
+  }
+}
