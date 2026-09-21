@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://modernnetworks.co.in/sitemap.xml
