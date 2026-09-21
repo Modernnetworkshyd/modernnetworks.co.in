@@ -760,3 +760,138 @@ body[data-page="contact"] .address-card strong{
     font-size:15px;
   }
 }
+
+
+/* MODERN NETWORKS V20 — compact visual refinement, official brand balance
+   Blue 35% | Magenta 35% | Green 15% | Gold 15% */
+:root{--mn-blue:#1E71B6;--mn-green:#159558;--mn-magenta:#CA2378;--mn-gold:#EDAD25;}
+body{overflow-x:hidden}
+.container{width:min(1160px,92%)}
+.site-header{box-shadow:0 4px 20px rgba(12,35,62,.06)}
+.main-nav a.active{font-weight:800}
+.nav-call{display:none!important}
+.btn-primary{background:linear-gradient(135deg,var(--mn-blue) 0%,var(--mn-blue) 58%,var(--mn-magenta) 100%)}
+.btn-primary:hover{background:linear-gradient(135deg,var(--mn-magenta),var(--mn-blue))}
+.eyebrow,.section-kicker{color:var(--mn-green)}
+.section{padding:54px 0}
+.section-heading{margin-bottom:24px}
+.section-heading h2,.two-col h2,.why-grid h2{margin-top:7px;margin-bottom:10px}
+.section-heading p,.two-col p{margin-top:0}
+.final-cta{background:linear-gradient(105deg,var(--mn-blue) 0%,var(--mn-blue) 36%,var(--mn-magenta) 71%,var(--mn-magenta) 100%);border-top:4px solid var(--mn-gold)}
+.final-cta .section-kicker{color:#fff}
+.about-stat strong,.experience-number,.workflow-grid article>b{color:var(--mn-magenta)}
+.workflow-grid article:nth-child(2)>b{color:var(--mn-green)}
+.workflow-grid article:nth-child(3)>b{color:var(--mn-gold)}
+.workflow-grid article:nth-child(4)>b{color:var(--mn-blue)}
+.service-photo-card span,.showcase-image-card span{background:var(--mn-magenta)}
+.service-photo-card:nth-child(2) span,.showcase-image-card:nth-child(2) span{background:var(--mn-green)}
+.service-photo-card:nth-child(3) span,.showcase-image-card:nth-child(3) span{background:var(--mn-gold);color:#1d2a36}
+.service-photo-card:nth-child(4) span,.showcase-image-card:nth-child(4) span{background:var(--mn-blue)}
+.hero-large{min-height:clamp(610px,72vh,760px);height:auto}
+.hero-large .hero-content-wrap{padding-top:56px;padding-bottom:70px}
+.about-reference-image-hero{height:clamp(430px,38vw,520px);max-height:520px}
+.about-reference-image-hero img{height:100%;object-fit:cover;object-position:center}
+.services-command-hero{height:clamp(560px,66vh,720px);min-height:560px}
+.services-command-inner{padding:52px 0 64px}
+.page-hero-modern{padding:34px 0 38px}
+.page-hero-modern h1{margin:7px 0 10px}
+.page-hero-modern p{margin:0 auto 20px;max-width:760px}
+
+/* Shared tab visuals — use supplied Modern Networks images, no generated artwork. */
+.showcase-visual-strip,.contact-visual-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:20px auto 0;max-width:1080px}
+.showcase-visual-strip div,.contact-visual-strip div{height:142px;overflow:hidden;border-radius:10px;border:1px solid rgba(255,255,255,.16);box-shadow:0 12px 25px rgba(0,0,0,.18);background:#0b2142}
+.showcase-visual-strip div:nth-child(1),.contact-visual-strip div:nth-child(1){border-bottom:4px solid var(--mn-blue)}
+.showcase-visual-strip div:nth-child(2),.contact-visual-strip div:nth-child(2){border-bottom:4px solid var(--mn-green)}
+.showcase-visual-strip div:nth-child(3),.contact-visual-strip div:nth-child(3){border-bottom:4px solid var(--mn-magenta)}
+.showcase-visual-strip div:nth-child(4),.contact-visual-strip div:nth-child(4){border-bottom:4px solid var(--mn-gold)}
+.showcase-visual-strip div:nth-child(5){border-bottom:4px solid var(--mn-magenta)}
+.showcase-visual-strip img,.contact-visual-strip img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.showcase-visual-strip div:hover img,.contact-visual-strip div:hover img{transform:scale(1.05)}
+.showcase-page-hero,.contact-page-hero{background:linear-gradient(135deg,#081f42 0%,#0f3158 52%,#4f1640 100%);color:#fff}
+.showcase-page-hero .section-kicker,.contact-page-hero .section-kicker{color:var(--mn-green)}
+.showcase-page-hero h1,.contact-page-hero h1{color:#fff}
+.showcase-page-hero p,.contact-page-hero p{color:#dce9f6}
+.showcase-gallery-section{padding-top:44px;padding-bottom:42px}
+.showcase-image-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.showcase-image-card{min-width:0}
+.showcase-image-card img{height:170px;object-fit:cover}
+.showcase-image-card strong{font-size:14px}
+.showcase-image-card small{font-size:11px}
+.showcase-process-compact{padding-top:42px;padding-bottom:42px}
+.compact-workflow{gap:12px}
+.compact-workflow article{padding:18px 16px}
+.compact-workflow article p{margin-bottom:0}
+.testimonial-modern{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.testimonial-modern blockquote{padding:20px;margin:0}
+
+/* Contact — compact two-column contact + enquiry experience. */
+.contact-page-hero .contact-visual-strip{grid-template-columns:repeat(4,1fr);max-width:900px}
+.contact-page-hero .contact-visual-strip div{height:125px}
+.contact-grid-enhanced{grid-template-columns:minmax(0,1fr) minmax(360px,.82fr);align-items:start;gap:34px}
+.contact-details-column h2,.enquiry-panel h2{margin-top:7px;margin-bottom:8px}
+.contact-details-modern{gap:12px}
+.contact-info-card{min-height:76px;padding:14px 16px}
+.contact-icon{width:42px;height:42px;display:grid;place-items:center;flex:0 0 42px;border-radius:11px}
+.contact-icon svg{width:23px;height:23px;fill:currentColor}
+.whatsapp-card .contact-icon{color:#fff;background:var(--mn-green)}
+.enquiry-panel{padding:22px;border-radius:16px;background:linear-gradient(145deg,#fff,#f3f8fc);border:1px solid rgba(30,113,182,.16);box-shadow:0 16px 36px rgba(18,59,96,.10);border-top:5px solid var(--mn-magenta)}
+.enquiry-brand{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.enquiry-brand img{width:150px;height:auto;max-height:50px;object-fit:contain}
+.enquiry-brand span{font-size:10px;font-weight:900;letter-spacing:.13em;color:var(--mn-gold)}
+.enquiry-panel p{font-size:13px;color:var(--muted);margin:0 0 14px}
+.enquiry-form{display:grid;gap:10px}
+.enquiry-form label{font-size:11px;font-weight:800;color:var(--navy)}
+.enquiry-form input,.enquiry-form select,.enquiry-form textarea{display:block;width:100%;margin-top:5px;border:1px solid #d8e2eb;border-radius:9px;padding:10px 11px;font:inherit;font-size:13px;color:var(--navy);background:#fff;outline:none;box-sizing:border-box}
+.enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus{border-color:var(--mn-blue);box-shadow:0 0 0 3px rgba(30,113,182,.10)}
+.enquiry-form textarea{resize:vertical;min-height:78px}
+.enquiry-submit{width:100%;border:0;cursor:pointer;padding:12px 16px}
+.form-status{font-size:11px;color:var(--mn-green);min-height:14px}
+.contact-compact-note{padding-top:38px;padding-bottom:38px}
+.map-section iframe{height:300px}
+
+/* Floating WhatsApp Business action — compact and unmistakable. */
+.floating-wa{display:flex!important;align-items:center;gap:8px;right:22px;bottom:20px;width:auto!important;height:50px!important;padding:0 17px;border-radius:999px;background:var(--mn-green)!important;color:#fff!important;box-shadow:0 10px 24px rgba(21,149,88,.30);font-size:12px;font-weight:900;letter-spacing:.02em;text-decoration:none;z-index:50}
+.floating-wa svg{width:24px;height:24px;fill:currentColor;flex:0 0 24px}
+.floating-wa:hover{transform:translateY(-2px);background:#117d49!important}
+
+/* First-visit enquiry modal. It uses the real Modern Networks logo and sends the completed enquiry to WhatsApp. */
+.mn-enquiry-modal{position:fixed;inset:0;z-index:2000;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(3,17,38,.66);backdrop-filter:blur(5px)}
+.mn-enquiry-modal.is-open{display:flex}
+.mn-enquiry-dialog{position:relative;width:min(520px,94vw);max-height:90vh;overflow:auto;border-radius:18px;background:#fff;box-shadow:0 28px 70px rgba(0,0,0,.35);border-top:5px solid var(--mn-blue)}
+.mn-enquiry-head{display:flex;align-items:center;gap:14px;padding:18px 20px 10px}
+.mn-enquiry-head img{width:150px;height:auto;max-height:48px;object-fit:contain}
+.mn-enquiry-head div{margin-left:auto;text-align:right}
+.mn-enquiry-head b{display:block;font-size:10px;color:var(--mn-magenta);letter-spacing:.12em}
+.mn-enquiry-head small{color:var(--muted);font-size:10px}
+.mn-enquiry-body{padding:6px 20px 20px}
+.mn-enquiry-body h2{margin:4px 0 6px;color:var(--navy);font-size:24px}
+.mn-enquiry-body p{margin:0 0 14px;color:var(--muted);font-size:12px}
+.mn-enquiry-close{position:absolute;right:12px;top:10px;width:30px;height:30px;border:0;border-radius:50%;background:#edf3f8;color:var(--navy);cursor:pointer;font-size:18px}
+.mn-enquiry-form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mn-enquiry-form label{font-size:10px;font-weight:800;color:var(--navy)}
+.mn-enquiry-form label.full{grid-column:1/-1}
+.mn-enquiry-form input,.mn-enquiry-form select,.mn-enquiry-form textarea{display:block;width:100%;box-sizing:border-box;margin-top:4px;padding:10px;border:1px solid #d9e3ec;border-radius:8px;font:inherit;font-size:12px}
+.mn-enquiry-form textarea{min-height:68px;resize:vertical}
+.mn-enquiry-submit{grid-column:1/-1;border:0;border-radius:9px;padding:11px;background:linear-gradient(90deg,var(--mn-blue),var(--mn-magenta));color:#fff;font-weight:900;cursor:pointer}
+.mn-enquiry-note{grid-column:1/-1;font-size:9px;color:#758697;text-align:center}
+@media(max-width:900px){
+ .section{padding:46px 0}
+ .showcase-visual-strip,.contact-visual-strip{grid-template-columns:repeat(5,150px);overflow-x:auto;padding-bottom:5px}
+ .showcase-visual-strip div{height:125px}.contact-page-hero .contact-visual-strip{grid-template-columns:repeat(4,155px)}
+ .showcase-image-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .contact-grid-enhanced{grid-template-columns:1fr;gap:26px}
+ .hero-large{min-height:640px}.services-command-hero{height:600px;min-height:600px}
+ .about-reference-image-hero{height:460px}
+}
+@media(max-width:680px){
+ .section{padding:40px 0}
+ .page-hero-modern{padding:28px 0 30px}
+ .showcase-image-grid{grid-template-columns:1fr 1fr;gap:10px}.showcase-image-card img{height:145px}
+ .testimonial-modern{grid-template-columns:1fr}
+ .about-reference-image-hero{height:380px}
+ .services-command-hero{height:560px;min-height:560px}
+ .floating-wa{right:14px;bottom:14px;width:50px!important;height:50px!important;padding:0;justify-content:center}.floating-wa span{display:none}
+ .enquiry-panel{padding:18px}.enquiry-brand img{width:135px}
+ .mn-enquiry-form{grid-template-columns:1fr}.mn-enquiry-form label.full,.mn-enquiry-submit,.mn-enquiry-note{grid-column:1}
+ .mn-enquiry-head{padding-right:42px}
+}
