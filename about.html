@@ -9,7 +9,7 @@
 <meta property="og:type" content="website"><meta property="og:title" content="About Modern Networks | Hyderabad PBX, Intercom & CCTV"><meta property="og:description" content="Learn about Modern Networks, a Hyderabad-based provider of PBX, Intercom, Networking and CCTV technology solutions."><meta property="og:url" content="https://modernnetworks.co.in/about.html">
 <meta property="og:image" content="https://modernnetworks.co.in/assets/modern-networks-logo.png">
 <link rel="icon" href="assets/modern-networks-logo.png">
-<link rel="stylesheet" href="css/style.css?v=20260922-v25">
+<link rel="stylesheet" href="css/style.css?v=20260922-v26">
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Modern Networks","url":"https://modernnetworks.co.in/about.html","logo":"https://modernnetworks.co.in/assets/modern-networks-logo.png","telephone":"+91-9346199444","address":{"@type":"PostalAddress","streetAddress":"8-3-231/C/72/A, Sri Krishna Nagar, Yousufguda","addressLocality":"Hyderabad","addressRegion":"Telangana","postalCode":"500038","addressCountry":"IN"},"areaServed":"Hyderabad, Telangana","description":"Hyderabad-based PBX, EPABX, Intercom, Networking, CCTV and Biometrics solutions provider."}</script>
 <style>
@@ -135,19 +135,50 @@ body[data-page="about"] .about-modern-points span{
 <style>
 /* About Us hero — supplied artwork, sized to the same hero height used across the site. */
 body[data-page="about"] .about-supplied-hero{
+  position:relative;
   width:100%;
   height:clamp(610px,72vh,760px);
   min-height:610px;
   overflow:hidden;
-  background:#061a3c;
+  background:#123f78;
   line-height:0;
+  isolation:isolate;
+}
+body[data-page="about"] .about-supplied-hero::before{
+  content:"";
+  position:absolute;
+  inset:-30px;
+  z-index:-2;
+  background-image:url("../assets/about-us-hero.png");
+  background-size:cover;
+  background-position:center;
+  filter:blur(18px);
+  transform:scale(1.06);
+  opacity:.72;
+}
+body[data-page="about"] .about-supplied-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:linear-gradient(90deg,rgba(9,43,83,.20),rgba(9,43,83,.04) 50%,rgba(9,43,83,.20));
 }
 body[data-page="about"] .about-supplied-hero img{
   display:block;
   width:100%;
   height:100%;
-  object-fit:fill;
+  object-fit:contain;
+  object-position:center;
   margin:0;
+}
+@media(max-width:680px){
+  body[data-page="about"] .about-supplied-hero{
+    height:610px!important;
+    min-height:610px!important;
+  }
+  body[data-page="about"] .about-supplied-hero::before{
+    filter:blur(14px);
+  }
 }
 @media(max-width:680px){
   body[data-page="about"] .about-supplied-hero{
