@@ -1030,3 +1030,93 @@ body[data-page="home"] .signal-node.gold em{color:#b07b00}
   body[data-page="home"] .signal-node span{grid-column:2}
   body[data-page="home"] .signal-node em{grid-column:2;justify-self:start}
 }
+
+/* Home V21 — visual cards for “Reliable technology with a local approach.” */
+body[data-page="home"] .why-visual-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+body[data-page="home"] .why-visual-card{
+  position:relative;
+  min-height:180px;
+  overflow:hidden;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.14);
+  background:#fff;
+  box-shadow:0 14px 32px rgba(0,0,0,.18);
+}
+body[data-page="home"] .why-visual-card img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:.24;
+  filter:saturate(.9);
+}
+body[data-page="home"] .why-visual-card:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(115deg,rgba(5,24,49,.96) 0%,rgba(8,31,60,.86) 52%,rgba(8,31,60,.42) 100%);
+}
+body[data-page="home"] .why-visual-card.green:after{background:linear-gradient(115deg,rgba(4,55,39,.96),rgba(8,53,47,.84),rgba(8,53,47,.40))}
+body[data-page="home"] .why-visual-card.gold:after{background:linear-gradient(115deg,rgba(69,49,6,.97),rgba(65,52,13,.84),rgba(65,52,13,.40))}
+body[data-page="home"] .why-visual-card.magenta:after{background:linear-gradient(115deg,rgba(68,9,45,.97),rgba(62,15,49,.84),rgba(62,15,49,.40))}
+body[data-page="home"] .why-card-content{
+  position:relative;
+  z-index:2;
+  min-height:180px;
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+body[data-page="home"] .why-card-content>b{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:34px;
+  height:34px;
+  margin-bottom:10px;
+  border-radius:10px;
+  background:var(--mn-blue);
+  color:#fff;
+  font:900 10px Montserrat;
+  box-shadow:0 7px 16px rgba(0,0,0,.2);
+}
+body[data-page="home"] .why-visual-card.green .why-card-content>b{background:var(--mn-green)}
+body[data-page="home"] .why-visual-card.gold .why-card-content>b{background:var(--mn-gold);color:#24313c}
+body[data-page="home"] .why-visual-card.magenta .why-card-content>b{background:var(--mn-magenta)}
+body[data-page="home"] .why-card-content>strong{
+  color:#fff;
+  font:800 15px Montserrat;
+  line-height:1.25;
+  margin-bottom:6px;
+}
+body[data-page="home"] .why-card-content p{
+  color:#e3edf7;
+  font-size:11px;
+  line-height:1.55;
+  margin:0 0 10px;
+  max-width:340px;
+}
+body[data-page="home"] .why-card-content span{
+  color:var(--mn-gold);
+  font:800 8px Montserrat;
+  letter-spacing:.12em;
+}
+body[data-page="home"] .why-visual-card.green .why-card-content span{color:#69d69e}
+body[data-page="home"] .why-visual-card.magenta .why-card-content span{color:#ff86bd}
+body[data-page="home"] .why-visual-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 20px 38px rgba(0,0,0,.24);
+}
+body[data-page="home"] .why-visual-card:hover img{transform:scale(1.05);opacity:.31}
+body[data-page="home"] .why-visual-card img{transition:transform .4s ease,opacity .4s ease}
+@media(max-width:680px){
+  body[data-page="home"] .why-visual-list{grid-template-columns:1fr}
+  body[data-page="home"] .why-visual-card,
+  body[data-page="home"] .why-card-content{min-height:165px}
+}
