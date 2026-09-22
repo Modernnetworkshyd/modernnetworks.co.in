@@ -132,6 +132,30 @@ body[data-page="about"] .about-modern-points span{
   }
 }
 </style>
+<style>
+/* About Us hero — supplied artwork, sized to the same hero height used across the site. */
+body[data-page="about"] .about-supplied-hero{
+  width:100%;
+  height:clamp(610px,72vh,760px);
+  min-height:610px;
+  overflow:hidden;
+  background:#061a3c;
+  line-height:0;
+}
+body[data-page="about"] .about-supplied-hero img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:fill;
+  margin:0;
+}
+@media(max-width:680px){
+  body[data-page="about"] .about-supplied-hero{
+    height:610px!important;
+    min-height:610px!important;
+  }
+}
+</style>
 </head>
 <body id="top" data-page="about">
 
@@ -154,23 +178,8 @@ body[data-page="about"] .about-modern-points span{
 </header>
 
 <main>
-<section class="about-modern-hero" aria-label="About Modern Networks">
-  <img class="about-modern-hero-bg" src="assets/about-us-page.png" alt="Modern Networks communication, networking, CCTV and biometric technology solutions">
-  <div class="about-modern-hero-overlay"></div>
-  <div class="container about-modern-hero-content">
-    <div class="about-modern-copy">
-      <span class="section-kicker">WHO WE ARE</span>
-      <h1>Connecting people, systems and spaces.</h1>
-      <p>Modern Networks is a Hyderabad-based technology solutions business focused on communication, connectivity, surveillance and identity solutions.</p>
-      <p>Our team brings <strong>18+ years of hands-on technical experience</strong> across IT infrastructure, communication systems, networking and technology support.</p>
-      <div class="about-modern-points">
-        <span>PBX &amp; Intercom</span>
-        <span>Networking</span>
-        <span>CCTV</span>
-        <span>Biometrics</span>
-      </div>
-    </div>
-  </div>
+<section class="about-supplied-hero" aria-label="About Modern Networks">
+  <img src="assets/about-us-hero.png" alt="About Us - Modern Networks technology solutions">
 </section>
 <section class="section"><div class="container two-col"><div><span class="section-kicker">WHO WE ARE</span><h2>Connecting people, systems and spaces.</h2><p>Modern Networks is a Hyderabad-based technology solutions business focused on communication, connectivity, surveillance and identity solutions. Our team brings <strong>18+ years of hands-on technical experience</strong> across IT infrastructure, communication systems, networking and technology support.</p><p>Our approach is simple: understand the site, identify the requirement, recommend an appropriate solution and deliver a clean installation.</p><p>We serve homes, offices, retail businesses and commercial environments.</p></div><div class="about-panel about-solution-panel about-fact-panel">
  <div class="about-stat"><strong>05</strong><span>Core solution areas</span></div>
