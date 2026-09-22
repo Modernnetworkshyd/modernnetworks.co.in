@@ -1713,3 +1713,86 @@ body[data-page="about"] .section-heading .section-kicker{
   .hero-large,.about-reference-image-hero,.services-command-hero,.showcase-page-hero,.contact-page-hero,
   .showcase-blended-hero,.contact-blended-hero{min-height:610px!important}
 }
+
+/* ABOUT PRODUCT HERO — text left, enlarged supplied product visual right */
+.about-product-hero{
+  width:100%;
+  overflow:hidden;
+  background:#fff;
+  border-top:0!important;
+  border-bottom:0!important;
+  box-shadow:none!important;
+}
+.about-product-hero-inner{
+  min-height:clamp(540px,68vh,700px);
+  display:grid;
+  grid-template-columns:minmax(0,42%) minmax(0,58%);
+  align-items:center;
+  gap:24px;
+  padding:34px 0;
+}
+.about-product-copy{position:relative;z-index:2;padding:20px 0 20px 8px}
+.about-product-copy .section-kicker{display:block;margin-bottom:12px}
+.about-product-copy h1{
+  margin:0 0 18px;
+  max-width:590px;
+  font-size:clamp(38px,4.3vw,64px);
+  line-height:1.04;
+  letter-spacing:-1.6px;
+  color:var(--mn-blue-dark);
+}
+.about-product-copy p{
+  max-width:540px;
+  margin:0 0 26px;
+  font-size:18px;
+  line-height:1.7;
+  color:#425466;
+}
+.about-product-visual{
+  height:100%;
+  min-height:500px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  overflow:hidden;
+  background:#fff;
+  border:0!important;
+  box-shadow:none!important;
+}
+.about-product-visual img{
+  display:block;
+  width:118%;
+  max-width:none;
+  height:auto;
+  transform:scale(1.12);
+  transform-origin:center right;
+  object-fit:contain;
+  border:0!important;
+  box-shadow:none!important;
+}
+@media(max-width:900px){
+  .about-product-hero-inner{
+    min-height:auto;
+    grid-template-columns:1fr;
+    padding:34px 0 10px;
+    gap:8px;
+  }
+  .about-product-copy{padding:10px 0 0;text-align:left}
+  .about-product-copy h1{font-size:40px;max-width:700px}
+  .about-product-copy p{font-size:15px}
+  .about-product-visual{
+    min-height:390px;
+    justify-content:center;
+  }
+  .about-product-visual img{
+    width:125%;
+    transform:scale(1.08);
+    transform-origin:center center;
+  }
+}
+@media(max-width:680px){
+  .about-product-hero-inner{padding-top:26px}
+  .about-product-copy h1{font-size:34px;letter-spacing:-.8px}
+  .about-product-copy p{font-size:14px;line-height:1.6}
+  .about-product-visual{min-height:300px}
+}
