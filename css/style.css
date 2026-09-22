@@ -1265,3 +1265,93 @@ body[data-page="about"] .section-heading .section-kicker{
     text-align:center;
   }
 }
+
+
+/* V23 — single-image hero treatment for Showcase and Contact */
+.showcase-single-visual,
+.contact-single-visual{
+  position:relative;
+  width:min(760px,100%);
+  height:330px;
+  margin:30px auto 0;
+  border-radius:26px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 28px 60px rgba(0,0,0,.30);
+  background:#071b35;
+}
+.hero-single-visual img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  filter:saturate(.95) contrast(1.04);
+}
+.hero-single-visual:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(4,20,40,.92) 0%,rgba(5,28,53,.62) 45%,rgba(5,28,53,.15) 100%),
+    linear-gradient(0deg,rgba(4,18,35,.72),transparent 55%);
+  pointer-events:none;
+}
+.hero-single-overlay{
+  position:absolute;
+  z-index:2;
+  left:28px;
+  bottom:26px;
+  max-width:570px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:5px;
+}
+.hero-single-overlay span{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  background:var(--mn-gold);
+  color:#172238;
+  font:900 9px Montserrat;
+  letter-spacing:.13em;
+}
+.hero-single-overlay strong{
+  color:#fff;
+  font:800 clamp(20px,2.6vw,30px)/1.15 Montserrat;
+  text-shadow:0 4px 16px rgba(0,0,0,.35);
+}
+.hero-single-overlay small{
+  color:#dcecf8;
+  font:700 11px "Nunito Sans",Arial,sans-serif;
+}
+.showcase-single-visual{border-top:4px solid var(--mn-magenta)}
+.contact-single-visual{border-top:4px solid var(--mn-blue)}
+.showcase-single-visual:before,
+.contact-single-visual:before{
+  content:"";
+  position:absolute;
+  z-index:3;
+  top:18px;
+  right:18px;
+  width:58px;
+  height:58px;
+  border:2px solid rgba(237,173,37,.75);
+  border-radius:50%;
+  box-shadow:0 0 0 8px rgba(237,173,37,.08);
+}
+@media(max-width:900px){
+  .showcase-single-visual,.contact-single-visual{height:300px}
+}
+@media(max-width:680px){
+  .showcase-single-visual,.contact-single-visual{
+    height:250px;
+    margin-top:22px;
+    border-radius:20px;
+  }
+  .hero-single-overlay{left:18px;right:18px;bottom:18px}
+  .hero-single-overlay strong{font-size:19px}
+  .hero-single-overlay small{font-size:10px}
+  .showcase-single-visual:before,.contact-single-visual:before{top:12px;right:12px;width:42px;height:42px}
+}
