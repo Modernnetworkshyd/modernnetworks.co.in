@@ -917,3 +917,12 @@ body{overflow-x:hidden}
 .site-footer .footer-contact a:hover{color:var(--mn-gold)}
 .site-footer .footer-address span{display:block;margin:0;padding:10px 13px;border-left:3px solid var(--mn-gold);background:rgba(237,173,37,.08);border-radius:0 8px 8px 0;color:#eaf3fb;line-height:1.6;font-size:12px;text-align:left;white-space:normal}
 @media(max-width:680px){.site-footer .footer-grid{grid-template-columns:1fr 1fr;gap:24px}.site-footer .footer-brand{grid-column:1/-1}.site-footer .footer-contact,.site-footer .footer-address{width:100%}.site-footer .footer-address span{width:100%;box-sizing:border-box}}
+
+
+/* Footer contact details — phone line and email under Contact. */
+.site-footer .footer-phone{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.site-footer .footer-phone a{font-size:12px;font-weight:800;color:#fff}
+.site-footer .footer-phone span{color:#8fa1c8;font-size:12px}
+.site-footer .footer-contact .footer-email-heading{margin-top:10px}
+.site-footer .footer-contact .footer-email{font-size:12px;font-weight:700;color:#fff;line-height:1.5}
+.site-footer .footer-contact .footer-email:hover{color:var(--mn-gold)}
