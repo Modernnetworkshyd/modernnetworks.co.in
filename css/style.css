@@ -1713,3 +1713,60 @@ body[data-page="about"] .section-heading .section-kicker{
   .hero-large,.about-reference-image-hero,.services-command-hero,.showcase-page-hero,.contact-page-hero,
   .showcase-blended-hero,.contact-blended-hero{min-height:610px!important}
 }
+
+
+/* Home — Why Modern Networks: high-visibility card typography */
+body[data-page="home"] .why-visual-card{
+  border:1px solid rgba(255,255,255,.28);
+}
+body[data-page="home"] .why-visual-card:after{
+  background:linear-gradient(115deg,rgba(4,23,48,.88) 0%,rgba(8,35,69,.74) 55%,rgba(8,35,69,.46) 100%);
+}
+body[data-page="home"] .why-visual-card.green:after{
+  background:linear-gradient(115deg,rgba(4,67,43,.88),rgba(8,67,51,.72),rgba(8,67,51,.43));
+}
+body[data-page="home"] .why-visual-card.gold:after{
+  background:linear-gradient(115deg,rgba(76,53,3,.90),rgba(72,57,8,.74),rgba(72,57,8,.43));
+}
+body[data-page="home"] .why-visual-card.magenta:after{
+  background:linear-gradient(115deg,rgba(78,8,48,.90),rgba(73,15,54,.74),rgba(73,15,54,.43));
+}
+body[data-page="home"] .why-card-content{
+  padding:20px;
+  text-shadow:0 2px 9px rgba(0,0,0,.42);
+}
+body[data-page="home"] .why-card-content>b{
+  width:38px;
+  height:38px;
+  font-size:11px;
+  margin-bottom:11px;
+}
+body[data-page="home"] .why-card-content>strong{
+  color:#fff!important;
+  font-size:18px;
+  line-height:1.25;
+  margin-bottom:7px;
+  text-shadow:0 2px 10px rgba(0,0,0,.55);
+}
+body[data-page="home"] .why-card-content p{
+  color:#f4f8fc!important;
+  font-size:12.5px;
+  line-height:1.55;
+  font-weight:600;
+  margin-bottom:11px;
+  text-shadow:0 2px 8px rgba(0,0,0,.5);
+}
+body[data-page="home"] .why-card-content span{
+  color:#ffd86a!important;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.13em;
+  text-shadow:0 2px 7px rgba(0,0,0,.55);
+}
+body[data-page="home"] .why-visual-card.green .why-card-content span{color:#7ff0b3!important}
+body[data-page="home"] .why-visual-card.magenta .why-card-content span{color:#ff9dca!important}
+@media(max-width:680px){
+  body[data-page="home"] .why-card-content{padding:18px}
+  body[data-page="home"] .why-card-content>strong{font-size:17px}
+  body[data-page="home"] .why-card-content p{font-size:12px}
+}
