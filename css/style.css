@@ -926,3 +926,12 @@ body{overflow-x:hidden}
 .site-footer .footer-contact .footer-email-heading{margin-top:10px}
 .site-footer .footer-contact .footer-email{font-size:12px;font-weight:700;color:#fff;line-height:1.5}
 .site-footer .footer-contact .footer-email:hover{color:var(--mn-gold)}
+
+
+/* Footer copyright — centered, premium and clearly visible on every page. */
+.site-footer .footer-bottom{background:linear-gradient(90deg,#08182f 0%,#0d2440 50%,#08182f 100%);border-top:1px solid rgba(237,173,37,.35)}
+.site-footer .footer-bottom-inner{display:flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:12px 0;text-align:center;color:#f4f7fb;font-family:Nunito Sans,Arial,sans-serif;font-size:11px;font-weight:600;line-height:1.6}
+.site-footer .footer-bottom-inner > span{color:var(--mn-gold);font-weight:900}
+.site-footer .footer-bottom-inner a{color:var(--mn-gold);font-weight:800}
+.site-footer .footer-bottom-inner a:hover{color:#fff}
+@media(max-width:680px){.site-footer .footer-bottom-inner{justify-content:center;align-items:center;text-align:center;gap:6px;padding:12px 10px;font-size:10px}.site-footer .footer-bottom-inner a{display:block}}
