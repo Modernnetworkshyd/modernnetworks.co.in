@@ -1186,3 +1186,82 @@ body[data-page="home"] .hero h1{font-weight:900}
   body[data-page="home"] .hero-text{font-size:16px}
   .page-hero p{font-size:14px}
 }
+
+
+/* MODERN NETWORKS V22 — About page alignment and shared hero geometry */
+body[data-page="about"] .about-reference-image-hero{
+  position:relative;
+  width:100%;
+  height:clamp(610px,72vh,760px)!important;
+  min-height:clamp(610px,72vh,760px)!important;
+  max-height:760px;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-sizing:border-box;
+  background:linear-gradient(135deg,#071b35 0%,#0d3152 55%,#123e63 100%);
+}
+body[data-page="about"] .about-reference-image-hero img{
+  display:block;
+  width:100%;
+  height:100%;
+  min-height:0!important;
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain!important;
+  object-position:center center;
+  margin:0 auto;
+}
+body[data-page="about"] .two-col{
+  min-width:0;
+  align-items:center;
+}
+body[data-page="about"] .two-col>div{
+  min-width:0;
+  max-width:100%;
+}
+body[data-page="about"] .two-col p,
+body[data-page="about"] .two-col h2{
+  overflow-wrap:anywhere;
+}
+body[data-page="about"] .about-fact-panel{
+  width:100%;
+  max-width:100%;
+  box-sizing:border-box;
+}
+body[data-page="about"] .section-heading{
+  width:100%;
+  max-width:730px;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  text-align:center;
+}
+body[data-page="about"] .section-heading .section-kicker{
+  display:block;
+}
+@media(max-width:900px){
+  body[data-page="about"] .about-reference-image-hero{
+    height:610px!important;
+    min-height:610px!important;
+  }
+  body[data-page="about"] .about-reference-image-hero img{
+    object-fit:contain!important;
+  }
+  body[data-page="about"] .two-col{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+}
+@media(max-width:680px){
+  body[data-page="about"] .about-reference-image-hero{
+    height:610px!important;
+    min-height:610px!important;
+  }
+  body[data-page="about"] .about-reference-image-hero img{
+    object-fit:contain!important;
+  }
+  body[data-page="about"] .section-heading{
+    text-align:center;
+  }
+}
