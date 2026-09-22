@@ -935,3 +935,98 @@ body{overflow-x:hidden}
 .site-footer .footer-bottom-inner a{color:var(--mn-gold);font-weight:800}
 .site-footer .footer-bottom-inner a:hover{color:#fff}
 @media(max-width:680px){.site-footer .footer-bottom-inner{justify-content:center;align-items:center;text-align:center;gap:6px;padding:12px 10px;font-size:10px}.site-footer .footer-bottom-inner a{display:block}}
+
+/* Home — eye-catching solution signal panel beside "Technology solutions planned around your space". */
+body[data-page="home"] .about-signal-panel{
+  position:relative;
+  min-height:290px;
+  padding:22px;
+  display:grid;
+  grid-template-columns:112px 1fr;
+  gap:18px;
+  align-items:center;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 18% 50%,rgba(30,113,182,.16),transparent 28%),
+    linear-gradient(145deg,#f8fcff 0%,#eef7fb 52%,#fff8e8 100%);
+  border:1px solid rgba(30,113,182,.15);
+  border-radius:26px;
+  box-shadow:0 22px 50px rgba(18,59,96,.12);
+}
+body[data-page="home"] .about-signal-panel:before{
+  content:"";
+  position:absolute;inset:0;
+  background:linear-gradient(120deg,transparent 0 42%,rgba(202,35,120,.055) 50%,transparent 58%);
+  pointer-events:none;
+}
+body[data-page="home"] .signal-orbit{
+  position:relative;width:104px;height:104px;border-radius:50%;
+  display:grid;place-items:center;flex:none;
+  background:radial-gradient(circle,#fff 0 29%,transparent 30%),
+             conic-gradient(var(--mn-blue),var(--mn-green),var(--mn-gold),var(--mn-magenta),var(--mn-blue));
+  box-shadow:0 0 0 10px rgba(30,113,182,.06),0 18px 35px rgba(30,113,182,.16);
+  animation:mnPulse 4s ease-in-out infinite;
+}
+body[data-page="home"] .signal-orbit:after{
+  content:"";position:absolute;inset:12px;border:1px dashed rgba(30,113,182,.35);border-radius:50%;
+}
+body[data-page="home"] .signal-orbit span{
+  position:relative;z-index:2;font:900 18px Montserrat;color:var(--mn-blue);
+  letter-spacing:.04em;
+}
+body[data-page="home"] .signal-orbit i{
+  position:absolute;width:8px;height:8px;border-radius:50%;z-index:3;
+  box-shadow:0 0 0 4px rgba(255,255,255,.75);
+}
+body[data-page="home"] .signal-orbit i:nth-child(1){background:var(--mn-blue);top:3px;left:48px}
+body[data-page="home"] .signal-orbit i:nth-child(2){background:var(--mn-green);right:8px;bottom:24px}
+body[data-page="home"] .signal-orbit i:nth-child(3){background:var(--mn-magenta);left:10px;bottom:20px}
+body[data-page="home"] .signal-path{position:relative;display:grid;gap:10px}
+body[data-page="home"] .signal-path:before{
+  content:"";position:absolute;left:14px;top:18px;bottom:18px;width:2px;
+  background:linear-gradient(var(--mn-blue),var(--mn-green),var(--mn-gold));
+  opacity:.35;
+}
+body[data-page="home"] .signal-node{
+  position:relative;display:grid;grid-template-columns:58px 1fr auto;align-items:center;
+  gap:10px;min-height:66px;padding:9px 12px 9px 7px;
+  background:rgba(255,255,255,.84);border:1px solid rgba(30,113,182,.12);
+  border-radius:15px;box-shadow:0 8px 20px rgba(18,59,96,.06);
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+body[data-page="home"] .signal-node:hover{transform:translateX(5px);box-shadow:0 14px 28px rgba(18,59,96,.12)}
+body[data-page="home"] .signal-node:before{
+  content:"";position:relative;z-index:2;width:14px;height:14px;border-radius:50%;
+  grid-column:1;grid-row:1;justify-self:center;background:var(--mn-blue);
+  box-shadow:0 0 0 5px #fff,0 0 0 7px rgba(30,113,182,.16);
+}
+body[data-page="home"] .signal-node.blue:before{background:var(--mn-blue)}
+body[data-page="home"] .signal-node.green:before{background:var(--mn-green)}
+body[data-page="home"] .signal-node.gold:before{background:var(--mn-gold)}
+body[data-page="home"] .signal-node b{
+  position:absolute;left:29px;top:8px;font:900 9px Montserrat;color:var(--mn-blue);
+}
+body[data-page="home"] .signal-node.green b{color:var(--mn-green)}
+body[data-page="home"] .signal-node.gold b{color:#b07b00}
+body[data-page="home"] .signal-node span{
+  grid-column:2;font:800 12px Montserrat;color:var(--ink);line-height:1.25;
+}
+body[data-page="home"] .signal-node em{
+  grid-column:3;font:800 9px Montserrat;font-style:normal;letter-spacing:.06em;
+  color:var(--mn-magenta);white-space:nowrap;
+}
+body[data-page="home"] .signal-node.green em{color:var(--mn-green)}
+body[data-page="home"] .signal-node.gold em{color:#b07b00}
+@keyframes mnPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 10px rgba(30,113,182,.06),0 18px 35px rgba(30,113,182,.16)}50%{transform:scale(1.035);box-shadow:0 0 0 15px rgba(30,113,182,.035),0 22px 42px rgba(30,113,182,.18)}}
+@media(max-width:900px){
+  body[data-page="home"] .about-signal-panel{min-height:270px}
+}
+@media(max-width:680px){
+  body[data-page="home"] .about-signal-panel{grid-template-columns:1fr;gap:18px;padding:20px}
+  body[data-page="home"] .signal-orbit{margin:0 auto;width:88px;height:88px}
+  body[data-page="home"] .signal-node{grid-template-columns:40px 1fr;min-height:60px}
+  body[data-page="home"] .signal-node:before{grid-column:1}
+  body[data-page="home"] .signal-node b{left:22px}
+  body[data-page="home"] .signal-node span{grid-column:2}
+  body[data-page="home"] .signal-node em{grid-column:2;justify-self:start}
+}
