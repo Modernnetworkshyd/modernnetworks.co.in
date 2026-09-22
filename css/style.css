@@ -898,3 +898,11 @@ body{overflow-x:hidden}
 
 
 /* V20 cache-busting safety: shared visual rules intentionally remain global. */
+
+
+/* V20.1 — Contact footer address: clear, aligned and easy to scan. */
+.site-footer .footer-grid > div:last-child{display:flex;flex-direction:column;align-items:flex-start;gap:7px}
+.site-footer .footer-grid > div:last-child h4{margin:0 0 4px;color:var(--mn-gold);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.site-footer .footer-grid > div:last-child a{display:block;line-height:1.45}
+.site-footer .footer-grid > div:last-child span{display:block;margin-top:4px;padding:11px 13px;border-left:3px solid var(--mn-gold);background:rgba(237,173,37,.08);border-radius:0 8px 8px 0;color:#eaf3fb;line-height:1.65;font-size:13px;text-align:left;white-space:normal}
+@media(max-width:680px){.site-footer .footer-grid > div:last-child span{width:100%;box-sizing:border-box}.site-footer .footer-grid > div:last-child{gap:6px}}
