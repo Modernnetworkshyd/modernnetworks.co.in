@@ -12,6 +12,126 @@
 <link rel="stylesheet" href="css/style.css?v=20260922-v25">
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Modern Networks","url":"https://modernnetworks.co.in/about.html","logo":"https://modernnetworks.co.in/assets/modern-networks-logo.png","telephone":"+91-9346199444","address":{"@type":"PostalAddress","streetAddress":"8-3-231/C/72/A, Sri Krishna Nagar, Yousufguda","addressLocality":"Hyderabad","addressRegion":"Telangana","postalCode":"500038","addressCountry":"IN"},"areaServed":"Hyderabad, Telangana","description":"Hyderabad-based PBX, EPABX, Intercom, Networking, CCTV and Biometrics solutions provider."}</script>
+<style>
+/* About Us — supplied product image used as a transparent/blended hero background. */
+body[data-page="about"] .about-modern-hero{
+  position:relative;
+  min-height:610px;
+  height:clamp(610px,72vh,760px);
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  isolation:isolate;
+  background:#061a3c;
+}
+body[data-page="about"] .about-modern-hero-bg{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center right;
+  opacity:.72;
+  z-index:-3;
+}
+body[data-page="about"] .about-modern-hero-overlay{
+  position:absolute;
+  inset:0;
+  z-index:-2;
+  background:
+    linear-gradient(90deg,rgba(6,26,60,.96) 0%,rgba(6,26,60,.88) 30%,rgba(6,26,60,.48) 55%,rgba(6,26,60,.10) 78%,rgba(6,26,60,.22) 100%),
+    linear-gradient(180deg,rgba(6,26,60,.22),rgba(6,26,60,.12));
+}
+body[data-page="about"] .about-modern-hero-content{
+  position:relative;
+  z-index:2;
+  width:100%;
+}
+body[data-page="about"] .about-modern-copy{
+  max-width:590px;
+  padding:34px 0;
+  color:#fff;
+}
+body[data-page="about"] .about-modern-copy .section-kicker{
+  color:var(--mn-gold);
+}
+body[data-page="about"] .about-modern-copy h1{
+  margin:12px 0 18px;
+  font-family:Montserrat,sans-serif;
+  font-size:clamp(38px,5vw,66px);
+  line-height:1.05;
+  letter-spacing:-2px;
+  color:#fff;
+}
+body[data-page="about"] .about-modern-copy p{
+  max-width:560px;
+  margin:0 0 12px;
+  color:rgba(255,255,255,.90);
+  font-size:16px;
+  line-height:1.65;
+}
+body[data-page="about"] .about-modern-copy p strong{color:#fff}
+body[data-page="about"] .about-modern-points{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:24px;
+}
+body[data-page="about"] .about-modern-points span{
+  padding:8px 12px;
+  border:1px solid rgba(255,255,255,.28);
+  border-left:3px solid var(--mn-green);
+  border-radius:7px;
+  background:rgba(6,26,60,.42);
+  backdrop-filter:blur(5px);
+  color:#fff;
+  font:700 10px/1.2 Montserrat,sans-serif;
+}
+@media(max-width:900px){
+  body[data-page="about"] .about-modern-hero{
+    height:610px;
+    min-height:610px;
+  }
+  body[data-page="about"] .about-modern-hero-bg{
+    object-position:58% center;
+    opacity:.62;
+  }
+  body[data-page="about"] .about-modern-hero-overlay{
+    background:linear-gradient(90deg,rgba(6,26,60,.96) 0%,rgba(6,26,60,.82) 48%,rgba(6,26,60,.28) 100%);
+  }
+}
+@media(max-width:680px){
+  body[data-page="about"] .about-modern-hero{
+    height:610px!important;
+    min-height:610px!important;
+  }
+  body[data-page="about"] .about-modern-hero-bg{
+    object-position:65% center;
+    opacity:.48;
+  }
+  body[data-page="about"] .about-modern-copy{
+    max-width:100%;
+    padding:25px 0;
+  }
+  body[data-page="about"] .about-modern-copy h1{
+    font-size:38px;
+    line-height:1.07;
+    letter-spacing:-1.3px;
+  }
+  body[data-page="about"] .about-modern-copy p{
+    font-size:14px;
+    line-height:1.55;
+  }
+  body[data-page="about"] .about-modern-points{
+    gap:7px;
+    margin-top:18px;
+  }
+  body[data-page="about"] .about-modern-points span{
+    font-size:9px;
+    padding:7px 9px;
+  }
+}
+</style>
 </head>
 <body id="top" data-page="about">
 
@@ -34,8 +154,23 @@
 </header>
 
 <main>
-<section class="about-reference-image-hero" aria-label="About Modern Networks">
-  <img src="assets/about-reference-hero.png" alt="Modern Networks communication, networking, CCTV and biometric technology solutions">
+<section class="about-modern-hero" aria-label="About Modern Networks">
+  <img class="about-modern-hero-bg" src="assets/about-modern-networks.jpg" alt="Modern Networks communication, networking, CCTV and biometric technology solutions">
+  <div class="about-modern-hero-overlay"></div>
+  <div class="container about-modern-hero-content">
+    <div class="about-modern-copy">
+      <span class="section-kicker">WHO WE ARE</span>
+      <h1>Connecting people, systems and spaces.</h1>
+      <p>Modern Networks is a Hyderabad-based technology solutions business focused on communication, connectivity, surveillance and identity solutions.</p>
+      <p>Our team brings <strong>18+ years of hands-on technical experience</strong> across IT infrastructure, communication systems, networking and technology support.</p>
+      <div class="about-modern-points">
+        <span>PBX &amp; Intercom</span>
+        <span>Networking</span>
+        <span>CCTV</span>
+        <span>Biometrics</span>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="section"><div class="container two-col"><div><span class="section-kicker">WHO WE ARE</span><h2>Connecting people, systems and spaces.</h2><p>Modern Networks is a Hyderabad-based technology solutions business focused on communication, connectivity, surveillance and identity solutions. Our team brings <strong>18+ years of hands-on technical experience</strong> across IT infrastructure, communication systems, networking and technology support.</p><p>Our approach is simple: understand the site, identify the requirement, recommend an appropriate solution and deliver a clean installation.</p><p>We serve homes, offices, retail businesses and commercial environments.</p></div><div class="about-panel about-solution-panel about-fact-panel">
  <div class="about-stat"><strong>05</strong><span>Core solution areas</span></div>
