@@ -187,7 +187,36 @@ body[data-page="about"] .about-supplied-hero img{
   }
 }
 </style>
-</head>
+<style>
+body[data-page="about"] .about-hero-services{
+  background:linear-gradient(135deg,#071b35 0%,#0d3152 55%,#123e63 100%);
+  padding:34px 0 42px;
+  overflow:hidden;
+}
+body[data-page="about"] .about-hero-services-heading{
+  text-align:center;
+  max-width:760px;
+  margin:0 auto 24px;
+}
+body[data-page="about"] .about-hero-services-heading .section-kicker{
+  color:var(--mn-gold);
+}
+body[data-page="about"] .about-hero-services-heading h2{
+  margin:8px 0 0;
+  font:800 26px/1.2 Montserrat,sans-serif;
+  color:#fff;
+}
+body[data-page="about"] .about-hero-services .about-service-strip{
+  max-width:1120px;
+}
+@media(max-width:900px){
+  body[data-page="about"] .about-hero-services{padding:28px 0 34px}
+}
+@media(max-width:680px){
+  body[data-page="about"] .about-hero-services{padding:24px 0 28px}
+  body[data-page="about"] .about-hero-services-heading h2{font-size:21px}
+}
+</style></head>
 <body id="top" data-page="about">
 
 <div class="topbar"><div class="container topbar-inner">
@@ -210,6 +239,36 @@ body[data-page="about"] .about-supplied-hero img{
 
 <main>
 <section class="about-experience-visual" aria-label="About Modern Networks"><img src="assets/about-experience.png?v=20260926-v4" alt="Modern Networks — Connecting people, systems and spaces with 18+ years of experience, professional communication, networking, CCTV, biometric and technical support solutions across Hyderabad and surrounding areas."></section>
+<section class="about-hero-services" aria-label="Modern Networks core services">
+  <div class="container">
+    <div class="about-hero-services-heading">
+      <span class="section-kicker">OUR CORE SERVICES</span>
+      <h2>Connected technology for communication, security and access.</h2>
+    </div>
+    <div class="about-service-strip">
+      <article class="about-service-tile">
+        <img src="assets/about-pbx.jpg" alt="EPABX and PBX communication systems">
+        <div><strong>EPABX / PBX</strong><small>Business communication systems</small></div>
+      </article>
+      <article class="about-service-tile">
+        <img src="assets/about-intercom.jpg" alt="Intercom and controlled entry systems">
+        <div><strong>INTERCOM</strong><small>Internal communication &amp; entry</small></div>
+      </article>
+      <article class="about-service-tile">
+        <img src="assets/about-network.jpg" alt="Networking and Wi-Fi infrastructure">
+        <div><strong>NETWORKING</strong><small>LAN, Wi-Fi &amp; structured connectivity</small></div>
+      </article>
+      <article class="about-service-tile">
+        <img src="assets/about-cctv.jpg" alt="CCTV surveillance and monitoring systems">
+        <div><strong>CCTV</strong><small>Surveillance &amp; monitoring</small></div>
+      </article>
+      <article class="about-service-tile">
+        <img src="assets/about-biometrics.jpg" alt="Biometric attendance and access control">
+        <div><strong>BIOMETRICS</strong><small>Attendance &amp; access control</small></div>
+      </article>
+    </div>
+  </div>
+</section>
 
 <section class="section section-soft"><div class="container"><div class="section-heading"><span class="section-kicker">WHAT WE COVER</span><h2>Solutions selected for real working environments.</h2><p>Our work combines equipment, installation and support so the technology fits the site instead of becoming another layer of complexity.</p></div><div class="about-coverage-grid"><article><b>Communication</b><span>PBX and intercom systems for everyday calls, reception and controlled entry.</span></article><article><b>Connectivity</b><span>LAN, Wi-Fi, switching and structured cabling for dependable access to network resources.</span></article><article><b>Security</b><span>CCTV and monitoring systems designed around coverage, recording and remote viewing needs.</span></article><article><b>Identity</b><span>Biometric attendance and access solutions using face and fingerprint recognition.</span></article></div></div></section>
 <section class="section section-soft"><div class="container section-heading"><span class="section-kicker">OUR APPROACH</span><h2>Practical technology. Professional execution.</h2><p>We aim to make technology easier to deploy, use and maintain through suitable equipment, organized installation and clear communication.</p></div></section>
