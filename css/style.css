@@ -1820,36 +1820,3 @@ body[data-page="home"] .why-card-content span{
   body[data-page="home"] .why-card-content>strong{font-size:18px}
   body[data-page="home"] .why-card-content p{font-size:12.8px}
 }
-
-
-/* Home — Why Modern Networks: reduced shadow + sharp black embossing */
-body[data-page="home"] .why-visual-card{
-  box-shadow:0 7px 16px rgba(0,0,0,.10);
-}
-body[data-page="home"] .why-card-content{
-  text-shadow:none;
-}
-body[data-page="home"] .why-card-content>strong{
-  text-shadow:
-    1px 1px 0 #000,
-    -1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000;
-}
-body[data-page="home"] .why-card-content p{
-  text-shadow:
-    1px 1px 0 #000,
-    -1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000;
-}
-body[data-page="home"] .why-card-content span{
-  text-shadow:
-    1px 1px 0 #000,
-    -1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000;
-}
-body[data-page="home"] .why-card-content>b{
-  box-shadow:0 5px 10px rgba(0,0,0,.14);
-}
