@@ -1854,3 +1854,22 @@ body[data-page="home"] .why-visual-card.magenta .why-card-content span{color:#ff
 .site-footer .footer-email-list{display:flex;flex-direction:column;align-items:flex-start;gap:3px;width:100%;}
 .site-footer .footer-email-list .footer-email{display:block!important;line-height:1.5;white-space:nowrap;}
 @media(max-width:680px){.site-footer .footer-email-list .footer-email{white-space:normal;overflow-wrap:anywhere;}}
+
+
+/* Home — size down the approved Why Modern Networks image */
+body[data-page="home"] .why-modern-network-visual{
+  width:min(88%,1280px);
+  margin:0 auto;
+  overflow:hidden;
+}
+body[data-page="home"] .why-modern-network-visual img{
+  display:block;
+  width:100%;
+  height:auto;
+  margin:0 auto;
+}
+@media(max-width:680px){
+  body[data-page="home"] .why-modern-network-visual{
+    width:100%;
+  }
+}
