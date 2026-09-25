@@ -1820,3 +1820,31 @@ body[data-page="home"] .why-card-content span{
   body[data-page="home"] .why-card-content>strong{font-size:18px}
   body[data-page="home"] .why-card-content p{font-size:12.8px}
 }
+
+
+/* Home — Why Modern Networks: lighter emboss, cleaner colour, sharper text */
+body[data-page="home"] .why-visual-card{
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+body[data-page="home"] .why-card-content>strong,
+body[data-page="home"] .why-card-content p,
+body[data-page="home"] .why-card-content span{
+  text-shadow:0 1px 1px rgba(0,0,0,.75)!important;
+}
+body[data-page="home"] .why-card-content>strong{
+  color:#ffffff!important;
+  font-weight:850;
+  letter-spacing:.015em;
+}
+body[data-page="home"] .why-card-content p{
+  color:#f2f6fa!important;
+  font-weight:650;
+  letter-spacing:.005em;
+}
+body[data-page="home"] .why-card-content span{
+  color:#ffd35a!important;
+  font-weight:900;
+  letter-spacing:.11em;
+}
+body[data-page="home"] .why-visual-card.green .why-card-content span{color:#69e3a2!important}
+body[data-page="home"] .why-visual-card.magenta .why-card-content span{color:#ff91c3!important}
