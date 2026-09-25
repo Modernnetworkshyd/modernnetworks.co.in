@@ -1848,3 +1848,9 @@ body[data-page="home"] .why-card-content span{
 }
 body[data-page="home"] .why-visual-card.green .why-card-content span{color:#69e3a2!important}
 body[data-page="home"] .why-visual-card.magenta .why-card-content span{color:#ff91c3!important}
+
+
+/* Footer email list — aligned one per line. */
+.site-footer .footer-email-list{display:flex;flex-direction:column;align-items:flex-start;gap:3px;width:100%;}
+.site-footer .footer-email-list .footer-email{display:block!important;line-height:1.5;white-space:nowrap;}
+@media(max-width:680px){.site-footer .footer-email-list .footer-email{white-space:normal;overflow-wrap:anywhere;}}
