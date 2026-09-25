@@ -1770,3 +1770,53 @@ body[data-page="home"] .why-visual-card.magenta .why-card-content span{color:#ff
   body[data-page="home"] .why-card-content>strong{font-size:17px}
   body[data-page="home"] .why-card-content p{font-size:12px}
 }
+
+
+/* Home — Why Modern Networks: maximum end-user readability */
+body[data-page="home"] .why-visual-card{
+  min-height:205px;
+}
+body[data-page="home"] .why-visual-card img{
+  opacity:.12;
+  filter:saturate(.7) brightness(.82);
+}
+body[data-page="home"] .why-visual-card:after{
+  background:linear-gradient(115deg,rgba(4,23,48,.985) 0%,rgba(8,35,69,.95) 58%,rgba(8,35,69,.88) 100%)!important;
+}
+body[data-page="home"] .why-visual-card.green:after{
+  background:linear-gradient(115deg,rgba(4,67,43,.985) 0%,rgba(8,67,51,.95) 58%,rgba(8,67,51,.88) 100%)!important;
+}
+body[data-page="home"] .why-visual-card.gold:after{
+  background:linear-gradient(115deg,rgba(76,53,3,.99) 0%,rgba(72,57,8,.95) 58%,rgba(72,57,8,.88) 100%)!important;
+}
+body[data-page="home"] .why-visual-card.magenta:after{
+  background:linear-gradient(115deg,rgba(78,8,48,.99) 0%,rgba(73,15,54,.95) 58%,rgba(73,15,54,.88) 100%)!important;
+}
+body[data-page="home"] .why-card-content{
+  min-height:205px;
+  padding:22px;
+  justify-content:center;
+}
+body[data-page="home"] .why-card-content>strong{
+  font-size:19px;
+  line-height:1.3;
+  letter-spacing:.01em;
+}
+body[data-page="home"] .why-card-content p{
+  color:#fff!important;
+  font-size:13.5px;
+  line-height:1.6;
+  font-weight:700;
+  max-width:390px;
+}
+body[data-page="home"] .why-card-content span{
+  font-size:9.5px;
+  line-height:1.4;
+}
+@media(max-width:680px){
+  body[data-page="home"] .why-visual-card,
+  body[data-page="home"] .why-card-content{min-height:185px}
+  body[data-page="home"] .why-card-content{padding:20px}
+  body[data-page="home"] .why-card-content>strong{font-size:18px}
+  body[data-page="home"] .why-card-content p{font-size:12.8px}
+}
