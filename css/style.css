@@ -1873,3 +1873,22 @@ body[data-page="home"] .why-modern-network-visual img{
     width:100%;
   }
 }
+
+
+/* About — match Home page image alignment for approved experience artwork */
+body[data-page="about"] .about-experience-visual{
+  width:min(88%,1280px);
+  margin:0 auto;
+  overflow:hidden;
+}
+body[data-page="about"] .about-experience-visual img{
+  display:block;
+  width:100%;
+  height:auto;
+  margin:0 auto;
+}
+@media(max-width:680px){
+  body[data-page="about"] .about-experience-visual{
+    width:100%;
+  }
+}
